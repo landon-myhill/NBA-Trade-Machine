@@ -5,6 +5,19 @@
     "top-5 protected", "top-8 protected", "top-10 protected", "top-14 protected",
     "lottery protected"
   ],
+  "_swap_fields": "For pick swaps, set swap_type to 'best_of' (gets the lower pick #) or 'worst_of' (gets the higher pick #), and swap_partners to the other team abbreviations. expected_pick must be hand-authored to reflect the projected swap outcome. Example HOU/PHX 2027 swap below.",
+  "_swap_example_add": [
+    {
+      "id": "HOU-2027-1-swap-PHX", "owner_team_id": "HOU", "origin_team_id": "HOU",
+      "year": 2027, "round": 1, "protections": null, "expected_pick": 14,
+      "swap_type": "best_of", "swap_partners": ["PHX"]
+    },
+    {
+      "id": "PHX-2027-1-swap-HOU", "owner_team_id": "PHX", "origin_team_id": "PHX",
+      "year": 2027, "round": 1, "protections": null, "expected_pick": 24,
+      "swap_type": "worst_of", "swap_partners": ["HOU"]
+    }
+  ],
   "add": [],
   "remove": [],
   "edit": [

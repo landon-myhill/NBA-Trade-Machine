@@ -89,7 +89,38 @@ class DraftPick(BaseModel):
     round: Literal[1, 2]
     protections: str | None = None
     expected_pick: float = Field(
-        description="Expected pick number based on origin team's outlook (1-60)"
+        description="Expected pick number based on origin team's outlook (1-60). "
+        "For swap picks, this is the projected swap outcome (better of / worse of)."
+    )
+    swap_type: Literal["best_of", "worst_of"] | None = Field(
+        default=None,
+        description="If set, this pick is a swap result. 'best_of' = receives the lower pick "
+        "number of the swap partners; 'worst_of' = receives the higher pick number.",
+    )
+    swap_partners: list[str] = Field(
+        default_factory=list,
+        description="Team abbreviations of the other teams in the swap (e.g. ['PHX'] for a HOU/PHX swap).",
+    )
+
+
+class TradeException(BaseModel):
+    """A real-world Trade Exception (TPE) the team is currently holding.
+
+    Created when a team sends out more salary than it takes back in a non-
+    simultaneous trade. Can be used in a later trade to absorb up to (amount)
+    of incoming salary without matching outgoing salary. Indivisible —
+    a $15M TPE absorbs ONE incoming player up to $15M, not split across two.
+
+    MLE slots are derived from the team's tax tier at evaluation time and are
+    not stored here.
+    """
+
+    id: str
+    label: str = Field(description="Human-readable origin, e.g. 'from Brogdon trade'")
+    amount: int = Field(description="Available absorption capacity in dollars")
+    expires: str | None = Field(
+        default=None,
+        description="Expiration date or season label (informational; not enforced)",
     )
 
 
@@ -99,6 +130,7 @@ class Team(BaseModel):
     abbreviation: str
     needs: list[Position] = Field(default_factory=list)
     timeline: Literal["contender", "play_in", "rebuild"] = "play_in"
+    trade_exceptions: list[TradeException] = Field(default_factory=list)
 
 
 class TierRule(BaseModel):
@@ -131,15 +163,29 @@ class TierRubric(BaseModel):
 
 
 class TradeAsset(BaseModel):
-    """One asset moving between teams. Either player_id or pick_id is set."""
+    """One asset moving between teams. Either player_id or pick_id is set.
+
+    destination_team_id is required for 3+ team trades (each asset needs an
+    explicit recipient). For 2-team trades it's optional — if omitted, the
+    engine routes the asset to the only other side.
+    """
 
     player_id: str | None = None
     pick_id: str | None = None
+    destination_team_id: str | None = None
 
 
 class TradeSide(BaseModel):
     team_id: str
     sending: list[TradeAsset]
+    using_exceptions: list[str] = Field(
+        default_factory=list,
+        description=(
+            "IDs of this team's own TPEs / MLE slots being applied as incoming-salary "
+            "absorption. Use 'TEAM-MLE' for the team's auto-derived MLE slot, or any "
+            "id from the team's trade_exceptions list."
+        ),
+    )
 
 
 class Trade(BaseModel):
@@ -197,6 +243,18 @@ class CBASideCheck(BaseModel):
     legal: bool
     warnings: list[str]
     n_players_sent: int
+    exception_absorption: int = Field(
+        default=0,
+        description="Sum of TPE/MLE capacity applied to absorb incoming salary on this side.",
+    )
+    exceptions_used: list[str] = Field(
+        default_factory=list,
+        description="IDs of TPE/MLE entries applied as absorption on this side.",
+    )
+    created_tpe: int = Field(
+        default=0,
+        description="New Trade Exception that this trade would create for the team (positive = net salary sent out).",
+    )
 
 
 class FairnessReport(BaseModel):

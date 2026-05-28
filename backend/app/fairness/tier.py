@@ -18,6 +18,13 @@ from app.models import Player, TierRubric, TierRule
 PEAK_AGE_CUTOFF = 30
 PEAK_BOOST_CAP = 1.50
 
+# Star-tier (1-3) BPM ceilings only count if the player's current/blended
+# stats_value is also within reach of the tier — at least 70% of the tier's
+# min_stats_value. Prevents one-fluky-season role players (esp. centers with
+# BPM inflation) from being mis-tiered as All-NBA/All-Star caliber.
+STAR_TIER_THRESHOLD = 3
+STAR_TIER_BPM_SV_FLOOR = 0.70
+
 
 def _peak_recent_bpm(player: Player) -> float:
     """Best single-season BPM across stored season_logs (>= 30 games)."""
@@ -75,7 +82,7 @@ def _peak_recent(player: Player, field: str) -> float:
     return best
 
 
-def _matches(rule: TierRule, player: Player, tsv: float) -> bool:
+def _matches(rule: TierRule, player: Player, tsv: float, raw_sv: float) -> bool:
     """Returns True if `player` clears the rule.
 
     Stat thresholds (min_stats_value / min_bpm / min_epm / min_vorp) combine
@@ -85,16 +92,29 @@ def _matches(rule: TierRule, player: Player, tsv: float) -> bool:
     Age + accolade gates still combine via AND.
     """
     s = player.stats
+    sv_match = (
+        rule.min_stats_value is not None and tsv >= rule.min_stats_value
+    )
+    # Star-tier (1-3) BPM/EPM/VORP ceilings require the RAW stats_value (not
+    # the peak-BPM-ratio-boosted tsv) to also clear a floor. Blocks one-season-
+    # wonder role players (Gafford 2024-25 BPM 3.8 fluke) from being mis-tiered
+    # as All-NBA/All-Star caliber. The boosted tsv already lets *stars in a
+    # down year* qualify via min_stats_value path.
+    is_star_tier = rule.tier <= STAR_TIER_THRESHOLD
+    sv_floor_met = True
+    if is_star_tier and rule.min_stats_value is not None:
+        sv_floor_met = raw_sv >= rule.min_stats_value * STAR_TIER_BPM_SV_FLOOR
+
     stat_conds: list[bool] = []
     if rule.min_stats_value is not None:
-        stat_conds.append(tsv >= rule.min_stats_value)
+        stat_conds.append(sv_match)
     if rule.min_epm is not None:
         peak_epm = max(s.epm, _peak_recent(player, "bpm"))
-        stat_conds.append(peak_epm >= rule.min_epm)
+        stat_conds.append(peak_epm >= rule.min_epm and sv_floor_met)
     if rule.min_bpm is not None:
-        stat_conds.append(_peak_recent(player, "bpm") >= rule.min_bpm)
+        stat_conds.append(_peak_recent(player, "bpm") >= rule.min_bpm and sv_floor_met)
     if rule.min_vorp is not None:
-        stat_conds.append(_peak_recent(player, "vorp") >= rule.min_vorp)
+        stat_conds.append(_peak_recent(player, "vorp") >= rule.min_vorp and sv_floor_met)
     if stat_conds and not any(stat_conds):
         return False
     if rule.min_age is not None and player.age < rule.min_age:
@@ -111,9 +131,10 @@ def _matches(rule: TierRule, player: Player, tsv: float) -> bool:
 def assign_tier(player: Player, rubric: TierRubric) -> tuple[int, str]:
     """Returns (tier_number, tier_label) for the first matching rule."""
     from app.fairness.stats_value import stats_value
-    tsv = tier_stats_value(player, stats_value(player))
+    raw_sv = stats_value(player)
+    tsv = tier_stats_value(player, raw_sv)
     for rule in sorted(rubric.rules, key=lambda r: r.tier):
-        if _matches(rule, player, tsv):
+        if _matches(rule, player, tsv, raw_sv):
             return rule.tier, rule.label
     return rubric.default_tier, "Unranked"
 

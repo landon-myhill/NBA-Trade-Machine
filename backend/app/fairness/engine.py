@@ -1,12 +1,18 @@
 """Fairness orchestrator.
 
 Combines tier, stats_value, pick_value, and fit into a single fairness report.
-v1 supports 2-team trades. 3+ team trades require explicit per-asset destinations
-and are rejected with HTTP 400 by the route layer.
+Supports 2-team trades (destination implicit — the "other side") and N-team
+trades for N >= 3 (each asset must specify destination_team_id).
+
+Fairness:
+  - 2-team: 100 * (1 - |a_total - b_total| / max(a_total, b_total))
+  - N-team: 100 * (1 - |worst_net| / max_team_total_traded), where worst_net is
+    the most negative per-team net (receiving - sending). If no team is a net
+    loser, fairness = 100.
 """
 from __future__ import annotations
 
-from app.cba.limits import TIER_LABEL
+from app.cba.limits import TIER_LABEL, mle_amount
 from app.cba.matching import check_side
 from app.cba.team_status import team_tax_tier, team_total_salary
 from app.data.repository import Repository
@@ -63,10 +69,15 @@ def _value_player(
 
 def _value_pick(pick: DraftPick) -> AssetValuation:
     pv = pick_value(pick)
-    label = f"{pick.year} R{pick.round} (exp. #{int(pick.expected_pick)}"
-    if pick.origin_team_id != pick.owner_team_id:
-        label += f", via {pick.origin_team_id}"
-    label += ")"
+    if pick.swap_type:
+        verb = "Best of" if pick.swap_type == "best_of" else "Worst of"
+        partners = "/".join([pick.owner_team_id, *pick.swap_partners])
+        label = f"{pick.year} R{pick.round} ({verb} {partners}, proj #{int(pick.expected_pick)})"
+    else:
+        label = f"{pick.year} R{pick.round} (exp. #{int(pick.expected_pick)}"
+        if pick.origin_team_id != pick.owner_team_id:
+            label += f", via {pick.origin_team_id}"
+        label += ")"
     if pick.protections:
         label += f" [{pick.protections}]"
     return AssetValuation(
@@ -134,51 +145,132 @@ def _player_salaries(assets: list[TradeAsset], repo: Repository) -> tuple[int, i
     return total, count
 
 
-def _cba_check(trade: Trade, repo: Repository) -> tuple[bool, list[CBASideCheck]]:
-    side_a, side_b = trade.sides[0], trade.sides[1]
-    a_out, a_n = _player_salaries(side_a.sending, repo)
-    b_out, b_n = _player_salaries(side_b.sending, repo)
+def _resolve_destination(
+    sender_team_id: str,
+    asset: TradeAsset,
+    team_ids: list[str],
+) -> str:
+    """Pick the destination for an asset. For 2-team trades the destination is
+    implicit; for N>=3 it must be set on the asset."""
+    if asset.destination_team_id:
+        if asset.destination_team_id not in team_ids:
+            raise ValueError(
+                f"Asset destination {asset.destination_team_id} is not a participating team"
+            )
+        if asset.destination_team_id == sender_team_id:
+            raise ValueError(f"Asset destination cannot equal sender ({sender_team_id})")
+        return asset.destination_team_id
+    if len(team_ids) == 2:
+        return team_ids[1] if team_ids[0] == sender_team_id else team_ids[0]
+    raise ValueError(
+        f"3+ team trades require destination_team_id on every asset "
+        f"(missing on an asset sent by {sender_team_id})"
+    )
 
-    tier_a = team_tax_tier(side_a.team_id, repo)
-    tier_b = team_tax_tier(side_b.team_id, repo)
-    total_a = team_total_salary(side_a.team_id, repo)
-    total_b = team_total_salary(side_b.team_id, repo)
 
-    check_a = check_side(side_a.team_id, tier_a, a_out, b_out, a_n)
-    check_b = check_side(side_b.team_id, tier_b, b_out, a_out, b_n)
+def _resolve_exceptions(
+    team_id: str,
+    requested_ids: list[str],
+    repo: Repository,
+    tier: str,
+) -> tuple[int, list[str], list[str]]:
+    """Resolve a side's requested exception ids into absorption capacity.
 
-    cba_sides = [
-        CBASideCheck(
-            team_id=check_a.team_id,
-            tax_tier=check_a.tier,
-            tax_tier_label=TIER_LABEL[check_a.tier],
-            total_team_salary=total_a,
-            salary_out=check_a.salary_out,
-            salary_in=check_a.salary_in,
-            max_salary_in=check_a.max_salary_in,
-            legal=check_a.legal,
-            warnings=check_a.warnings,
-            n_players_sent=check_a.n_players_sent,
-        ),
-        CBASideCheck(
-            team_id=check_b.team_id,
-            tax_tier=check_b.tier,
-            tax_tier_label=TIER_LABEL[check_b.tier],
-            total_team_salary=total_b,
-            salary_out=check_b.salary_out,
-            salary_in=check_b.salary_in,
-            max_salary_in=check_b.max_salary_in,
-            legal=check_b.legal,
-            warnings=check_b.warnings,
-            n_players_sent=check_b.n_players_sent,
-        ),
-    ]
-    return (check_a.legal and check_b.legal), cba_sides
+    Returns (total_absorption, applied_ids, warnings).
+    Unknown ids become warnings and contribute 0 capacity. Second-apron teams
+    cannot use any exceptions (warning + 0).
+    """
+    if not requested_ids:
+        return 0, [], []
+    if tier == "second_apron":
+        return 0, [], [
+            "Second-apron team cannot use trade exceptions or the MLE.",
+        ]
+    team = repo.get_team(team_id)
+    if not team:
+        return 0, [], [f"Unknown team {team_id} when resolving exceptions."]
+    by_id: dict[str, int] = {e.id: e.amount for e in team.trade_exceptions}
+    mle_id = f"{team_id}-MLE"
+    mle_cap = mle_amount(tier)  # type: ignore[arg-type]
+    if mle_cap > 0:
+        by_id[mle_id] = mle_cap
+
+    total = 0
+    applied: list[str] = []
+    warnings: list[str] = []
+    for rid in requested_ids:
+        if rid not in by_id:
+            warnings.append(f"Exception '{rid}' is not available for {team_id}.")
+            continue
+        total += by_id[rid]
+        applied.append(rid)
+    return total, applied, warnings
+
+
+def _cba_check(
+    trade: Trade, repo: Repository, team_ids: list[str]
+) -> tuple[bool, list[CBASideCheck]]:
+    out_per_team: dict[str, tuple[int, int]] = {}
+    in_per_team: dict[str, int] = {tid: 0 for tid in team_ids}
+    exceptions_per_team: dict[str, list[str]] = {tid: [] for tid in team_ids}
+
+    for side in trade.sides:
+        out_salary, out_count = _player_salaries(side.sending, repo)
+        out_per_team[side.team_id] = (out_salary, out_count)
+        exceptions_per_team[side.team_id] = list(side.using_exceptions)
+        for asset in side.sending:
+            if not asset.player_id:
+                continue
+            player = repo.get_player(asset.player_id)
+            if not player:
+                continue
+            dest = _resolve_destination(side.team_id, asset, team_ids)
+            in_per_team[dest] = in_per_team.get(dest, 0) + player.contract.current_salary
+
+    cba_sides: list[CBASideCheck] = []
+    all_legal = True
+    for tid in team_ids:
+        out_salary, out_count = out_per_team.get(tid, (0, 0))
+        in_salary = in_per_team.get(tid, 0)
+        tier = team_tax_tier(tid, repo)
+        total_team = team_total_salary(tid, repo)
+        absorption, applied_ids, exc_warnings = _resolve_exceptions(
+            tid, exceptions_per_team.get(tid, []), repo, tier
+        )
+        # Reduce the salary the matching-rule cap must cover by the absorbed amount
+        residual_in = max(0, in_salary - absorption)
+        check = check_side(tid, tier, out_salary, residual_in, out_count)
+        effective_max_in = check.max_salary_in + absorption
+
+        warnings = list(check.warnings) + exc_warnings
+        # Project a new TPE: net salary sent out becomes future absorption capacity.
+        created_tpe = max(0, out_salary - in_salary)
+
+        cba_sides.append(
+            CBASideCheck(
+                team_id=check.team_id,
+                tax_tier=check.tier,
+                tax_tier_label=TIER_LABEL[check.tier],
+                total_team_salary=total_team,
+                salary_out=check.salary_out,
+                salary_in=in_salary,  # report the ACTUAL incoming salary, not residual
+                max_salary_in=effective_max_in,
+                legal=check.legal and not exc_warnings,
+                warnings=warnings,
+                n_players_sent=check.n_players_sent,
+                exception_absorption=absorption,
+                exceptions_used=applied_ids,
+                created_tpe=created_tpe,
+            )
+        )
+        if not check.legal or exc_warnings:
+            all_legal = False
+    return all_legal, cba_sides
 
 
 def evaluate(trade: Trade, repo: Repository) -> FairnessReport:
-    if len(trade.sides) != 2:
-        raise ValueError("v1 only supports 2-team trades")
+    if len(trade.sides) < 2:
+        raise ValueError("Trade requires at least 2 sides")
 
     rubric = repo.get_rubric()
     teams = {s.team_id: repo.get_team(s.team_id) for s in trade.sides}
@@ -186,44 +278,65 @@ def evaluate(trade: Trade, repo: Repository) -> FairnessReport:
         missing = [tid for tid, t in teams.items() if t is None]
         raise ValueError(f"Unknown team_id(s): {missing}")
 
-    side_a, side_b = trade.sides[0], trade.sides[1]
-    team_a, team_b = teams[side_a.team_id], teams[side_b.team_id]
-    assert team_a is not None and team_b is not None
+    team_ids = [s.team_id for s in trade.sides]
+    if len(set(team_ids)) != len(team_ids):
+        raise ValueError("Each side must be a distinct team")
 
-    a_sending = [_value_asset(a, team_b, repo, rubric) for a in side_a.sending]
-    b_sending = [_value_asset(a, team_a, repo, rubric) for a in side_b.sending]
+    sending_by_team: dict[str, list[AssetValuation]] = {tid: [] for tid in team_ids}
+    receiving_by_team: dict[str, list[AssetValuation]] = {tid: [] for tid in team_ids}
 
-    a_sending_total = sum(v.total_value for v in a_sending)
-    b_sending_total = sum(v.total_value for v in b_sending)
+    for side in trade.sides:
+        for asset in side.sending:
+            dest_id = _resolve_destination(side.team_id, asset, team_ids)
+            dest_team = teams[dest_id]
+            assert dest_team is not None
+            val = _value_asset(asset, dest_team, repo, rubric)
+            sending_by_team[side.team_id].append(val)
+            receiving_by_team[dest_id].append(val)
 
-    side_a_val = SideValuation(
-        team_id=side_a.team_id,
-        sending=a_sending,
-        receiving=b_sending,
-        sending_total=round(a_sending_total, 2),
-        receiving_total=round(b_sending_total, 2),
-        net=round(b_sending_total - a_sending_total, 2),
-    )
-    side_b_val = SideValuation(
-        team_id=side_b.team_id,
-        sending=b_sending,
-        receiving=a_sending,
-        sending_total=round(b_sending_total, 2),
-        receiving_total=round(a_sending_total, 2),
-        net=round(a_sending_total - b_sending_total, 2),
-    )
+    side_vals: list[SideValuation] = []
+    for tid in team_ids:
+        sending_total = sum(v.total_value for v in sending_by_team[tid])
+        receiving_total = sum(v.total_value for v in receiving_by_team[tid])
+        side_vals.append(
+            SideValuation(
+                team_id=tid,
+                sending=sending_by_team[tid],
+                receiving=receiving_by_team[tid],
+                sending_total=round(sending_total, 2),
+                receiving_total=round(receiving_total, 2),
+                net=round(receiving_total - sending_total, 2),
+            )
+        )
 
-    larger = max(a_sending_total, b_sending_total, 1.0)
-    gap_ratio = abs(a_sending_total - b_sending_total) / larger
-    fairness_score = max(0.0, 100.0 * (1.0 - gap_ratio))
+    if len(side_vals) == 2:
+        # 2-team formula preserved for backward compat (matches existing tests).
+        a_total = side_vals[0].sending_total
+        b_total = side_vals[1].sending_total
+        larger = max(a_total, b_total, 1.0)
+        gap_ratio = abs(a_total - b_total) / larger
+        fairness_score = max(0.0, 100.0 * (1.0 - gap_ratio))
+    else:
+        # N-team: worst-loser scoring.
+        nets = [sv.net for sv in side_vals]
+        worst_net = min(nets)
+        max_team_total = max(
+            max(sv.sending_total, sv.receiving_total) for sv in side_vals
+        )
+        if worst_net >= 0:
+            fairness_score = 100.0
+        else:
+            fairness_score = max(
+                0.0, 100.0 * (1.0 - abs(worst_net) / max(max_team_total, 1.0))
+            )
 
-    cba_legal, cba_sides = _cba_check(trade, repo)
+    cba_legal, cba_sides = _cba_check(trade, repo, team_ids)
 
     return FairnessReport(
-        sides=[side_a_val, side_b_val],
+        sides=side_vals,
         fairness_score=round(fairness_score, 1),
         verdict=_verdict(fairness_score),  # type: ignore[arg-type]
-        explanation=_build_explanation([side_a_val, side_b_val], repo),
+        explanation=_build_explanation(side_vals, repo),
         cba_legal=cba_legal,
         cba_sides=cba_sides,
     )

@@ -108,27 +108,27 @@
     "expected_pick": 12
   },
   {
-    "id": "POR-2026-1",
-    "owner_team_id": "POR",
-    "origin_team_id": "POR",
-    "year": 2026,
-    "round": 1,
-    "protections": null,
-    "expected_pick": 13
-  },
-  {
     "id": "MIA-2026-1",
     "owner_team_id": "MIA",
     "origin_team_id": "MIA",
     "year": 2026,
     "round": 1,
     "protections": null,
-    "expected_pick": 14
+    "expected_pick": 13
   },
   {
     "id": "CHA-2026-1",
     "owner_team_id": "CHA",
     "origin_team_id": "CHA",
+    "year": 2026,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 14
+  },
+  {
+    "id": "CHI-2026-1-from-POR",
+    "owner_team_id": "CHI",
+    "origin_team_id": "POR",
     "year": 2026,
     "round": 1,
     "protections": null,
@@ -153,9 +153,9 @@
     "expected_pick": 17
   },
   {
-    "id": "CHA-2026-1-from-PHX",
+    "id": "CHA-2026-1-from-ORL",
     "owner_team_id": "CHA",
-    "origin_team_id": "PHX",
+    "origin_team_id": "ORL",
     "year": 2026,
     "round": 1,
     "protections": null,
@@ -339,7 +339,7 @@
     "year": 2026,
     "round": 2,
     "protections": null,
-    "expected_pick": 38
+    "expected_pick": 48
   },
   {
     "id": "CHI-2026-2",
