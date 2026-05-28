@@ -1,0 +1,3242 @@
+[
+  {
+    "id": "WAS-2026-1",
+    "owner_team_id": "WAS",
+    "origin_team_id": "WAS",
+    "year": 2026,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 1
+  },
+  {
+    "id": "UTA-2026-1",
+    "owner_team_id": "UTA",
+    "origin_team_id": "UTA",
+    "year": 2026,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 2
+  },
+  {
+    "id": "MEM-2026-1",
+    "owner_team_id": "MEM",
+    "origin_team_id": "MEM",
+    "year": 2026,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 3
+  },
+  {
+    "id": "CHI-2026-1",
+    "owner_team_id": "CHI",
+    "origin_team_id": "CHI",
+    "year": 2026,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 4
+  },
+  {
+    "id": "LAC-2026-1-from-IND",
+    "owner_team_id": "LAC",
+    "origin_team_id": "IND",
+    "year": 2026,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 5
+  },
+  {
+    "id": "BKN-2026-1",
+    "owner_team_id": "BKN",
+    "origin_team_id": "BKN",
+    "year": 2026,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 6
+  },
+  {
+    "id": "SAC-2026-1",
+    "owner_team_id": "SAC",
+    "origin_team_id": "SAC",
+    "year": 2026,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 7
+  },
+  {
+    "id": "ATL-2026-1-from-NOP",
+    "owner_team_id": "ATL",
+    "origin_team_id": "NOP",
+    "year": 2026,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 8
+  },
+  {
+    "id": "DAL-2026-1",
+    "owner_team_id": "DAL",
+    "origin_team_id": "DAL",
+    "year": 2026,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 9
+  },
+  {
+    "id": "MIL-2026-1",
+    "owner_team_id": "MIL",
+    "origin_team_id": "MIL",
+    "year": 2026,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 10
+  },
+  {
+    "id": "GSW-2026-1",
+    "owner_team_id": "GSW",
+    "origin_team_id": "GSW",
+    "year": 2026,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 11
+  },
+  {
+    "id": "OKC-2026-1-from-LAC",
+    "owner_team_id": "OKC",
+    "origin_team_id": "LAC",
+    "year": 2026,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 12
+  },
+  {
+    "id": "POR-2026-1",
+    "owner_team_id": "POR",
+    "origin_team_id": "POR",
+    "year": 2026,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 13
+  },
+  {
+    "id": "MIA-2026-1",
+    "owner_team_id": "MIA",
+    "origin_team_id": "MIA",
+    "year": 2026,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 14
+  },
+  {
+    "id": "CHA-2026-1",
+    "owner_team_id": "CHA",
+    "origin_team_id": "CHA",
+    "year": 2026,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "MEM-2026-1-from-PHX",
+    "owner_team_id": "MEM",
+    "origin_team_id": "PHX",
+    "year": 2026,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 16
+  },
+  {
+    "id": "OKC-2026-1-from-PHI",
+    "owner_team_id": "OKC",
+    "origin_team_id": "PHI",
+    "year": 2026,
+    "round": 1,
+    "protections": "protected",
+    "expected_pick": 17
+  },
+  {
+    "id": "CHA-2026-1-from-PHX",
+    "owner_team_id": "CHA",
+    "origin_team_id": "PHX",
+    "year": 2026,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 18
+  },
+  {
+    "id": "TOR-2026-1",
+    "owner_team_id": "TOR",
+    "origin_team_id": "TOR",
+    "year": 2026,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 19
+  },
+  {
+    "id": "SAS-2026-1-from-ATL",
+    "owner_team_id": "SAS",
+    "origin_team_id": "ATL",
+    "year": 2026,
+    "round": 1,
+    "protections": "swap rights",
+    "expected_pick": 20
+  },
+  {
+    "id": "DET-2026-1-from-MIN",
+    "owner_team_id": "DET",
+    "origin_team_id": "MIN",
+    "year": 2026,
+    "round": 1,
+    "protections": "swap rights",
+    "expected_pick": 21
+  },
+  {
+    "id": "PHI-2026-1-from-HOU",
+    "owner_team_id": "PHI",
+    "origin_team_id": "HOU",
+    "year": 2026,
+    "round": 1,
+    "protections": "protected",
+    "expected_pick": 22
+  },
+  {
+    "id": "ATL-2026-1-from-CLE",
+    "owner_team_id": "ATL",
+    "origin_team_id": "CLE",
+    "year": 2026,
+    "round": 1,
+    "protections": "swap rights",
+    "expected_pick": 23
+  },
+  {
+    "id": "NYK-2026-1",
+    "owner_team_id": "NYK",
+    "origin_team_id": "NYK",
+    "year": 2026,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 24
+  },
+  {
+    "id": "LAL-2026-1",
+    "owner_team_id": "LAL",
+    "origin_team_id": "LAL",
+    "year": 2026,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 25
+  },
+  {
+    "id": "DEN-2026-1",
+    "owner_team_id": "DEN",
+    "origin_team_id": "DEN",
+    "year": 2026,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 26
+  },
+  {
+    "id": "BOS-2026-1",
+    "owner_team_id": "BOS",
+    "origin_team_id": "BOS",
+    "year": 2026,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 27
+  },
+  {
+    "id": "MIN-2026-1-from-DET",
+    "owner_team_id": "MIN",
+    "origin_team_id": "DET",
+    "year": 2026,
+    "round": 1,
+    "protections": "swap rights",
+    "expected_pick": 28
+  },
+  {
+    "id": "CLE-2026-1-from-SAS",
+    "owner_team_id": "CLE",
+    "origin_team_id": "SAS",
+    "year": 2026,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 29
+  },
+  {
+    "id": "DAL-2026-1-from-OKC",
+    "owner_team_id": "DAL",
+    "origin_team_id": "OKC",
+    "year": 2026,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 30
+  },
+  {
+    "id": "WAS-2026-2",
+    "owner_team_id": "WAS",
+    "origin_team_id": "WAS",
+    "year": 2026,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 31
+  },
+  {
+    "id": "IND-2026-2",
+    "owner_team_id": "IND",
+    "origin_team_id": "IND",
+    "year": 2026,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 32
+  },
+  {
+    "id": "BKN-2026-2",
+    "owner_team_id": "BKN",
+    "origin_team_id": "BKN",
+    "year": 2026,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 33
+  },
+  {
+    "id": "SAC-2026-2",
+    "owner_team_id": "SAC",
+    "origin_team_id": "SAC",
+    "year": 2026,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 34
+  },
+  {
+    "id": "UTA-2026-2",
+    "owner_team_id": "UTA",
+    "origin_team_id": "UTA",
+    "year": 2026,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 35
+  },
+  {
+    "id": "MEM-2026-2",
+    "owner_team_id": "MEM",
+    "origin_team_id": "MEM",
+    "year": 2026,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 36
+  },
+  {
+    "id": "NOP-2026-2",
+    "owner_team_id": "NOP",
+    "origin_team_id": "NOP",
+    "year": 2026,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 37
+  },
+  {
+    "id": "DAL-2026-2",
+    "owner_team_id": "DAL",
+    "origin_team_id": "DAL",
+    "year": 2026,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 38
+  },
+  {
+    "id": "CHI-2026-2",
+    "owner_team_id": "CHI",
+    "origin_team_id": "CHI",
+    "year": 2026,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 39
+  },
+  {
+    "id": "MIL-2026-2",
+    "owner_team_id": "MIL",
+    "origin_team_id": "MIL",
+    "year": 2026,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 40
+  },
+  {
+    "id": "GSW-2026-2",
+    "owner_team_id": "GSW",
+    "origin_team_id": "GSW",
+    "year": 2026,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 41
+  },
+  {
+    "id": "POR-2026-2",
+    "owner_team_id": "POR",
+    "origin_team_id": "POR",
+    "year": 2026,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 42
+  },
+  {
+    "id": "LAC-2026-2",
+    "owner_team_id": "LAC",
+    "origin_team_id": "LAC",
+    "year": 2026,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 43
+  },
+  {
+    "id": "MIA-2026-2",
+    "owner_team_id": "MIA",
+    "origin_team_id": "MIA",
+    "year": 2026,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 44
+  },
+  {
+    "id": "CHA-2026-2",
+    "owner_team_id": "CHA",
+    "origin_team_id": "CHA",
+    "year": 2026,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "PHI-2026-2",
+    "owner_team_id": "PHI",
+    "origin_team_id": "PHI",
+    "year": 2026,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 46
+  },
+  {
+    "id": "ORL-2026-2",
+    "owner_team_id": "ORL",
+    "origin_team_id": "ORL",
+    "year": 2026,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 47
+  },
+  {
+    "id": "PHX-2026-2",
+    "owner_team_id": "PHX",
+    "origin_team_id": "PHX",
+    "year": 2026,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 48
+  },
+  {
+    "id": "TOR-2026-2",
+    "owner_team_id": "TOR",
+    "origin_team_id": "TOR",
+    "year": 2026,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 49
+  },
+  {
+    "id": "ATL-2026-2",
+    "owner_team_id": "ATL",
+    "origin_team_id": "ATL",
+    "year": 2026,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 50
+  },
+  {
+    "id": "MIN-2026-2",
+    "owner_team_id": "MIN",
+    "origin_team_id": "MIN",
+    "year": 2026,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 51
+  },
+  {
+    "id": "CLE-2026-2",
+    "owner_team_id": "CLE",
+    "origin_team_id": "CLE",
+    "year": 2026,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 52
+  },
+  {
+    "id": "HOU-2026-2",
+    "owner_team_id": "HOU",
+    "origin_team_id": "HOU",
+    "year": 2026,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 53
+  },
+  {
+    "id": "NYK-2026-2",
+    "owner_team_id": "NYK",
+    "origin_team_id": "NYK",
+    "year": 2026,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 54
+  },
+  {
+    "id": "LAL-2026-2",
+    "owner_team_id": "LAL",
+    "origin_team_id": "LAL",
+    "year": 2026,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 55
+  },
+  {
+    "id": "DEN-2026-2",
+    "owner_team_id": "DEN",
+    "origin_team_id": "DEN",
+    "year": 2026,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 56
+  },
+  {
+    "id": "BOS-2026-2",
+    "owner_team_id": "BOS",
+    "origin_team_id": "BOS",
+    "year": 2026,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 57
+  },
+  {
+    "id": "DET-2026-2",
+    "owner_team_id": "DET",
+    "origin_team_id": "DET",
+    "year": 2026,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 58
+  },
+  {
+    "id": "SAS-2026-2",
+    "owner_team_id": "SAS",
+    "origin_team_id": "SAS",
+    "year": 2026,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 59
+  },
+  {
+    "id": "OKC-2026-2",
+    "owner_team_id": "OKC",
+    "origin_team_id": "OKC",
+    "year": 2026,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 60
+  },
+  {
+    "id": "WAS-2027-1",
+    "owner_team_id": "WAS",
+    "origin_team_id": "WAS",
+    "year": 2027,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 1
+  },
+  {
+    "id": "IND-2027-1",
+    "owner_team_id": "IND",
+    "origin_team_id": "IND",
+    "year": 2027,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 2
+  },
+  {
+    "id": "BKN-2027-1",
+    "owner_team_id": "BKN",
+    "origin_team_id": "BKN",
+    "year": 2027,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 3
+  },
+  {
+    "id": "SAC-2027-1",
+    "owner_team_id": "SAC",
+    "origin_team_id": "SAC",
+    "year": 2027,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 4
+  },
+  {
+    "id": "UTA-2027-1",
+    "owner_team_id": "UTA",
+    "origin_team_id": "UTA",
+    "year": 2027,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 5
+  },
+  {
+    "id": "MEM-2027-1",
+    "owner_team_id": "MEM",
+    "origin_team_id": "MEM",
+    "year": 2027,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 6
+  },
+  {
+    "id": "NOP-2027-1",
+    "owner_team_id": "NOP",
+    "origin_team_id": "NOP",
+    "year": 2027,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 7
+  },
+  {
+    "id": "DAL-2027-1",
+    "owner_team_id": "DAL",
+    "origin_team_id": "DAL",
+    "year": 2027,
+    "round": 1,
+    "protections": "top-2 protected",
+    "expected_pick": 8
+  },
+  {
+    "id": "CHI-2027-1",
+    "owner_team_id": "CHI",
+    "origin_team_id": "CHI",
+    "year": 2027,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 9
+  },
+  {
+    "id": "MIL-2027-1",
+    "owner_team_id": "MIL",
+    "origin_team_id": "MIL",
+    "year": 2027,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 10
+  },
+  {
+    "id": "GSW-2027-1",
+    "owner_team_id": "GSW",
+    "origin_team_id": "GSW",
+    "year": 2027,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 11
+  },
+  {
+    "id": "POR-2027-1",
+    "owner_team_id": "POR",
+    "origin_team_id": "POR",
+    "year": 2027,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 12
+  },
+  {
+    "id": "LAC-2027-1",
+    "owner_team_id": "LAC",
+    "origin_team_id": "LAC",
+    "year": 2027,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 13
+  },
+  {
+    "id": "MIA-2027-1",
+    "owner_team_id": "MIA",
+    "origin_team_id": "MIA",
+    "year": 2027,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 14
+  },
+  {
+    "id": "CHA-2027-1",
+    "owner_team_id": "CHA",
+    "origin_team_id": "CHA",
+    "year": 2027,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "PHI-2027-1",
+    "owner_team_id": "PHI",
+    "origin_team_id": "PHI",
+    "year": 2027,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 16
+  },
+  {
+    "id": "ORL-2027-1",
+    "owner_team_id": "ORL",
+    "origin_team_id": "ORL",
+    "year": 2027,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 17
+  },
+  {
+    "id": "PHX-2027-1",
+    "owner_team_id": "PHX",
+    "origin_team_id": "PHX",
+    "year": 2027,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 18
+  },
+  {
+    "id": "TOR-2027-1",
+    "owner_team_id": "TOR",
+    "origin_team_id": "TOR",
+    "year": 2027,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 19
+  },
+  {
+    "id": "ATL-2027-1",
+    "owner_team_id": "ATL",
+    "origin_team_id": "ATL",
+    "year": 2027,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 20
+  },
+  {
+    "id": "MIN-2027-1",
+    "owner_team_id": "MIN",
+    "origin_team_id": "MIN",
+    "year": 2027,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 21
+  },
+  {
+    "id": "CLE-2027-1",
+    "owner_team_id": "CLE",
+    "origin_team_id": "CLE",
+    "year": 2027,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 22
+  },
+  {
+    "id": "HOU-2027-1",
+    "owner_team_id": "HOU",
+    "origin_team_id": "HOU",
+    "year": 2027,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 23
+  },
+  {
+    "id": "NYK-2027-1",
+    "owner_team_id": "NYK",
+    "origin_team_id": "NYK",
+    "year": 2027,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 24
+  },
+  {
+    "id": "LAL-2027-1",
+    "owner_team_id": "LAL",
+    "origin_team_id": "LAL",
+    "year": 2027,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 25
+  },
+  {
+    "id": "DEN-2027-1",
+    "owner_team_id": "DEN",
+    "origin_team_id": "DEN",
+    "year": 2027,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 26
+  },
+  {
+    "id": "BOS-2027-1",
+    "owner_team_id": "BOS",
+    "origin_team_id": "BOS",
+    "year": 2027,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 27
+  },
+  {
+    "id": "DET-2027-1",
+    "owner_team_id": "DET",
+    "origin_team_id": "DET",
+    "year": 2027,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 28
+  },
+  {
+    "id": "SAS-2027-1",
+    "owner_team_id": "SAS",
+    "origin_team_id": "SAS",
+    "year": 2027,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 29
+  },
+  {
+    "id": "OKC-2027-1",
+    "owner_team_id": "OKC",
+    "origin_team_id": "OKC",
+    "year": 2027,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 30
+  },
+  {
+    "id": "WAS-2027-2",
+    "owner_team_id": "WAS",
+    "origin_team_id": "WAS",
+    "year": 2027,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 31
+  },
+  {
+    "id": "IND-2027-2",
+    "owner_team_id": "IND",
+    "origin_team_id": "IND",
+    "year": 2027,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 32
+  },
+  {
+    "id": "BKN-2027-2",
+    "owner_team_id": "BKN",
+    "origin_team_id": "BKN",
+    "year": 2027,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 33
+  },
+  {
+    "id": "SAC-2027-2",
+    "owner_team_id": "SAC",
+    "origin_team_id": "SAC",
+    "year": 2027,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 34
+  },
+  {
+    "id": "UTA-2027-2",
+    "owner_team_id": "UTA",
+    "origin_team_id": "UTA",
+    "year": 2027,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 35
+  },
+  {
+    "id": "MEM-2027-2",
+    "owner_team_id": "MEM",
+    "origin_team_id": "MEM",
+    "year": 2027,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 36
+  },
+  {
+    "id": "NOP-2027-2",
+    "owner_team_id": "NOP",
+    "origin_team_id": "NOP",
+    "year": 2027,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 37
+  },
+  {
+    "id": "DAL-2027-2",
+    "owner_team_id": "DAL",
+    "origin_team_id": "DAL",
+    "year": 2027,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 38
+  },
+  {
+    "id": "CHI-2027-2",
+    "owner_team_id": "CHI",
+    "origin_team_id": "CHI",
+    "year": 2027,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 39
+  },
+  {
+    "id": "MIL-2027-2",
+    "owner_team_id": "MIL",
+    "origin_team_id": "MIL",
+    "year": 2027,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 40
+  },
+  {
+    "id": "GSW-2027-2",
+    "owner_team_id": "GSW",
+    "origin_team_id": "GSW",
+    "year": 2027,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 41
+  },
+  {
+    "id": "POR-2027-2",
+    "owner_team_id": "POR",
+    "origin_team_id": "POR",
+    "year": 2027,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 42
+  },
+  {
+    "id": "LAC-2027-2",
+    "owner_team_id": "LAC",
+    "origin_team_id": "LAC",
+    "year": 2027,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 43
+  },
+  {
+    "id": "MIA-2027-2",
+    "owner_team_id": "MIA",
+    "origin_team_id": "MIA",
+    "year": 2027,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 44
+  },
+  {
+    "id": "CHA-2027-2",
+    "owner_team_id": "CHA",
+    "origin_team_id": "CHA",
+    "year": 2027,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "PHI-2027-2",
+    "owner_team_id": "PHI",
+    "origin_team_id": "PHI",
+    "year": 2027,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 46
+  },
+  {
+    "id": "ORL-2027-2",
+    "owner_team_id": "ORL",
+    "origin_team_id": "ORL",
+    "year": 2027,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 47
+  },
+  {
+    "id": "PHX-2027-2",
+    "owner_team_id": "PHX",
+    "origin_team_id": "PHX",
+    "year": 2027,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 48
+  },
+  {
+    "id": "TOR-2027-2",
+    "owner_team_id": "TOR",
+    "origin_team_id": "TOR",
+    "year": 2027,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 49
+  },
+  {
+    "id": "ATL-2027-2",
+    "owner_team_id": "ATL",
+    "origin_team_id": "ATL",
+    "year": 2027,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 50
+  },
+  {
+    "id": "MIN-2027-2",
+    "owner_team_id": "MIN",
+    "origin_team_id": "MIN",
+    "year": 2027,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 51
+  },
+  {
+    "id": "CLE-2027-2",
+    "owner_team_id": "CLE",
+    "origin_team_id": "CLE",
+    "year": 2027,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 52
+  },
+  {
+    "id": "HOU-2027-2",
+    "owner_team_id": "HOU",
+    "origin_team_id": "HOU",
+    "year": 2027,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 53
+  },
+  {
+    "id": "NYK-2027-2",
+    "owner_team_id": "NYK",
+    "origin_team_id": "NYK",
+    "year": 2027,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 54
+  },
+  {
+    "id": "LAL-2027-2",
+    "owner_team_id": "LAL",
+    "origin_team_id": "LAL",
+    "year": 2027,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 55
+  },
+  {
+    "id": "DEN-2027-2",
+    "owner_team_id": "DEN",
+    "origin_team_id": "DEN",
+    "year": 2027,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 56
+  },
+  {
+    "id": "BOS-2027-2",
+    "owner_team_id": "BOS",
+    "origin_team_id": "BOS",
+    "year": 2027,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 57
+  },
+  {
+    "id": "DET-2027-2",
+    "owner_team_id": "DET",
+    "origin_team_id": "DET",
+    "year": 2027,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 58
+  },
+  {
+    "id": "SAS-2027-2",
+    "owner_team_id": "SAS",
+    "origin_team_id": "SAS",
+    "year": 2027,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 59
+  },
+  {
+    "id": "OKC-2027-2",
+    "owner_team_id": "OKC",
+    "origin_team_id": "OKC",
+    "year": 2027,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 60
+  },
+  {
+    "id": "ATL-2028-1",
+    "owner_team_id": "ATL",
+    "origin_team_id": "ATL",
+    "year": 2028,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "MEM-2028-1",
+    "owner_team_id": "MEM",
+    "origin_team_id": "MEM",
+    "year": 2028,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "NYK-2028-1",
+    "owner_team_id": "NYK",
+    "origin_team_id": "NYK",
+    "year": 2028,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "PHI-2028-1",
+    "owner_team_id": "PHI",
+    "origin_team_id": "PHI",
+    "year": 2028,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "LAL-2028-1",
+    "owner_team_id": "LAL",
+    "origin_team_id": "LAL",
+    "year": 2028,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "BKN-2028-1",
+    "owner_team_id": "BKN",
+    "origin_team_id": "BKN",
+    "year": 2028,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "CLE-2028-1",
+    "owner_team_id": "CLE",
+    "origin_team_id": "CLE",
+    "year": 2028,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "PHX-2028-1",
+    "owner_team_id": "PHX",
+    "origin_team_id": "PHX",
+    "year": 2028,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "POR-2028-1",
+    "owner_team_id": "POR",
+    "origin_team_id": "POR",
+    "year": 2028,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "HOU-2028-1",
+    "owner_team_id": "HOU",
+    "origin_team_id": "HOU",
+    "year": 2028,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "DEN-2028-1",
+    "owner_team_id": "DEN",
+    "origin_team_id": "DEN",
+    "year": 2028,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "SAC-2028-1",
+    "owner_team_id": "SAC",
+    "origin_team_id": "SAC",
+    "year": 2028,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "BOS-2028-1",
+    "owner_team_id": "BOS",
+    "origin_team_id": "BOS",
+    "year": 2028,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "MIN-2028-1",
+    "owner_team_id": "MIN",
+    "origin_team_id": "MIN",
+    "year": 2028,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "DET-2028-1",
+    "owner_team_id": "DET",
+    "origin_team_id": "DET",
+    "year": 2028,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "IND-2028-1",
+    "owner_team_id": "IND",
+    "origin_team_id": "IND",
+    "year": 2028,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "NOP-2028-1",
+    "owner_team_id": "NOP",
+    "origin_team_id": "NOP",
+    "year": 2028,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "TOR-2028-1",
+    "owner_team_id": "TOR",
+    "origin_team_id": "TOR",
+    "year": 2028,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "LAC-2028-1",
+    "owner_team_id": "LAC",
+    "origin_team_id": "LAC",
+    "year": 2028,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "UTA-2028-1",
+    "owner_team_id": "UTA",
+    "origin_team_id": "UTA",
+    "year": 2028,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "GSW-2028-1",
+    "owner_team_id": "GSW",
+    "origin_team_id": "GSW",
+    "year": 2028,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "DAL-2028-1",
+    "owner_team_id": "DAL",
+    "origin_team_id": "DAL",
+    "year": 2028,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "MIL-2028-1",
+    "owner_team_id": "MIL",
+    "origin_team_id": "MIL",
+    "year": 2028,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "ORL-2028-1",
+    "owner_team_id": "ORL",
+    "origin_team_id": "ORL",
+    "year": 2028,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "CHI-2028-1",
+    "owner_team_id": "CHI",
+    "origin_team_id": "CHI",
+    "year": 2028,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "CHA-2028-1",
+    "owner_team_id": "CHA",
+    "origin_team_id": "CHA",
+    "year": 2028,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "OKC-2028-1",
+    "owner_team_id": "OKC",
+    "origin_team_id": "OKC",
+    "year": 2028,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "WAS-2028-1",
+    "owner_team_id": "WAS",
+    "origin_team_id": "WAS",
+    "year": 2028,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "SAS-2028-1",
+    "owner_team_id": "SAS",
+    "origin_team_id": "SAS",
+    "year": 2028,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "MIA-2028-1",
+    "owner_team_id": "MIA",
+    "origin_team_id": "MIA",
+    "year": 2028,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "ATL-2028-2",
+    "owner_team_id": "ATL",
+    "origin_team_id": "ATL",
+    "year": 2028,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "MEM-2028-2",
+    "owner_team_id": "MEM",
+    "origin_team_id": "MEM",
+    "year": 2028,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "NYK-2028-2",
+    "owner_team_id": "NYK",
+    "origin_team_id": "NYK",
+    "year": 2028,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "PHI-2028-2",
+    "owner_team_id": "PHI",
+    "origin_team_id": "PHI",
+    "year": 2028,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "LAL-2028-2",
+    "owner_team_id": "LAL",
+    "origin_team_id": "LAL",
+    "year": 2028,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "BKN-2028-2",
+    "owner_team_id": "BKN",
+    "origin_team_id": "BKN",
+    "year": 2028,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "CLE-2028-2",
+    "owner_team_id": "CLE",
+    "origin_team_id": "CLE",
+    "year": 2028,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "PHX-2028-2",
+    "owner_team_id": "PHX",
+    "origin_team_id": "PHX",
+    "year": 2028,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "POR-2028-2",
+    "owner_team_id": "POR",
+    "origin_team_id": "POR",
+    "year": 2028,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "HOU-2028-2",
+    "owner_team_id": "HOU",
+    "origin_team_id": "HOU",
+    "year": 2028,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "DEN-2028-2",
+    "owner_team_id": "DEN",
+    "origin_team_id": "DEN",
+    "year": 2028,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "SAC-2028-2",
+    "owner_team_id": "SAC",
+    "origin_team_id": "SAC",
+    "year": 2028,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "BOS-2028-2",
+    "owner_team_id": "BOS",
+    "origin_team_id": "BOS",
+    "year": 2028,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "MIN-2028-2",
+    "owner_team_id": "MIN",
+    "origin_team_id": "MIN",
+    "year": 2028,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "DET-2028-2",
+    "owner_team_id": "DET",
+    "origin_team_id": "DET",
+    "year": 2028,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "IND-2028-2",
+    "owner_team_id": "IND",
+    "origin_team_id": "IND",
+    "year": 2028,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "NOP-2028-2",
+    "owner_team_id": "NOP",
+    "origin_team_id": "NOP",
+    "year": 2028,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "TOR-2028-2",
+    "owner_team_id": "TOR",
+    "origin_team_id": "TOR",
+    "year": 2028,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "LAC-2028-2",
+    "owner_team_id": "LAC",
+    "origin_team_id": "LAC",
+    "year": 2028,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "UTA-2028-2",
+    "owner_team_id": "UTA",
+    "origin_team_id": "UTA",
+    "year": 2028,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "GSW-2028-2",
+    "owner_team_id": "GSW",
+    "origin_team_id": "GSW",
+    "year": 2028,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "DAL-2028-2",
+    "owner_team_id": "DAL",
+    "origin_team_id": "DAL",
+    "year": 2028,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "MIL-2028-2",
+    "owner_team_id": "MIL",
+    "origin_team_id": "MIL",
+    "year": 2028,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "ORL-2028-2",
+    "owner_team_id": "ORL",
+    "origin_team_id": "ORL",
+    "year": 2028,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "CHI-2028-2",
+    "owner_team_id": "CHI",
+    "origin_team_id": "CHI",
+    "year": 2028,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "CHA-2028-2",
+    "owner_team_id": "CHA",
+    "origin_team_id": "CHA",
+    "year": 2028,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "OKC-2028-2",
+    "owner_team_id": "OKC",
+    "origin_team_id": "OKC",
+    "year": 2028,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "WAS-2028-2",
+    "owner_team_id": "WAS",
+    "origin_team_id": "WAS",
+    "year": 2028,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "SAS-2028-2",
+    "owner_team_id": "SAS",
+    "origin_team_id": "SAS",
+    "year": 2028,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "MIA-2028-2",
+    "owner_team_id": "MIA",
+    "origin_team_id": "MIA",
+    "year": 2028,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "ATL-2029-1",
+    "owner_team_id": "ATL",
+    "origin_team_id": "ATL",
+    "year": 2029,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "MEM-2029-1",
+    "owner_team_id": "MEM",
+    "origin_team_id": "MEM",
+    "year": 2029,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "NYK-2029-1",
+    "owner_team_id": "NYK",
+    "origin_team_id": "NYK",
+    "year": 2029,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "PHI-2029-1",
+    "owner_team_id": "PHI",
+    "origin_team_id": "PHI",
+    "year": 2029,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "LAL-2029-1",
+    "owner_team_id": "LAL",
+    "origin_team_id": "LAL",
+    "year": 2029,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "BKN-2029-1",
+    "owner_team_id": "BKN",
+    "origin_team_id": "BKN",
+    "year": 2029,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "CLE-2029-1",
+    "owner_team_id": "CLE",
+    "origin_team_id": "CLE",
+    "year": 2029,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "PHX-2029-1",
+    "owner_team_id": "PHX",
+    "origin_team_id": "PHX",
+    "year": 2029,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "POR-2029-1",
+    "owner_team_id": "POR",
+    "origin_team_id": "POR",
+    "year": 2029,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "HOU-2029-1",
+    "owner_team_id": "HOU",
+    "origin_team_id": "HOU",
+    "year": 2029,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "DEN-2029-1",
+    "owner_team_id": "DEN",
+    "origin_team_id": "DEN",
+    "year": 2029,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "SAC-2029-1",
+    "owner_team_id": "SAC",
+    "origin_team_id": "SAC",
+    "year": 2029,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "BOS-2029-1",
+    "owner_team_id": "BOS",
+    "origin_team_id": "BOS",
+    "year": 2029,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "MIN-2029-1",
+    "owner_team_id": "MIN",
+    "origin_team_id": "MIN",
+    "year": 2029,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "DET-2029-1",
+    "owner_team_id": "DET",
+    "origin_team_id": "DET",
+    "year": 2029,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "IND-2029-1",
+    "owner_team_id": "IND",
+    "origin_team_id": "IND",
+    "year": 2029,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "NOP-2029-1",
+    "owner_team_id": "NOP",
+    "origin_team_id": "NOP",
+    "year": 2029,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "TOR-2029-1",
+    "owner_team_id": "TOR",
+    "origin_team_id": "TOR",
+    "year": 2029,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "LAC-2029-1",
+    "owner_team_id": "LAC",
+    "origin_team_id": "LAC",
+    "year": 2029,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "UTA-2029-1",
+    "owner_team_id": "UTA",
+    "origin_team_id": "UTA",
+    "year": 2029,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "GSW-2029-1",
+    "owner_team_id": "GSW",
+    "origin_team_id": "GSW",
+    "year": 2029,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "DAL-2029-1",
+    "owner_team_id": "DAL",
+    "origin_team_id": "DAL",
+    "year": 2029,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "MIL-2029-1",
+    "owner_team_id": "MIL",
+    "origin_team_id": "MIL",
+    "year": 2029,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "ORL-2029-1",
+    "owner_team_id": "ORL",
+    "origin_team_id": "ORL",
+    "year": 2029,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "CHI-2029-1",
+    "owner_team_id": "CHI",
+    "origin_team_id": "CHI",
+    "year": 2029,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "CHA-2029-1",
+    "owner_team_id": "CHA",
+    "origin_team_id": "CHA",
+    "year": 2029,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "OKC-2029-1",
+    "owner_team_id": "OKC",
+    "origin_team_id": "OKC",
+    "year": 2029,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "WAS-2029-1",
+    "owner_team_id": "WAS",
+    "origin_team_id": "WAS",
+    "year": 2029,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "SAS-2029-1",
+    "owner_team_id": "SAS",
+    "origin_team_id": "SAS",
+    "year": 2029,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "MIA-2029-1",
+    "owner_team_id": "MIA",
+    "origin_team_id": "MIA",
+    "year": 2029,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "ATL-2029-2",
+    "owner_team_id": "ATL",
+    "origin_team_id": "ATL",
+    "year": 2029,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "MEM-2029-2",
+    "owner_team_id": "MEM",
+    "origin_team_id": "MEM",
+    "year": 2029,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "NYK-2029-2",
+    "owner_team_id": "NYK",
+    "origin_team_id": "NYK",
+    "year": 2029,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "PHI-2029-2",
+    "owner_team_id": "PHI",
+    "origin_team_id": "PHI",
+    "year": 2029,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "LAL-2029-2",
+    "owner_team_id": "LAL",
+    "origin_team_id": "LAL",
+    "year": 2029,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "BKN-2029-2",
+    "owner_team_id": "BKN",
+    "origin_team_id": "BKN",
+    "year": 2029,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "CLE-2029-2",
+    "owner_team_id": "CLE",
+    "origin_team_id": "CLE",
+    "year": 2029,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "PHX-2029-2",
+    "owner_team_id": "PHX",
+    "origin_team_id": "PHX",
+    "year": 2029,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "POR-2029-2",
+    "owner_team_id": "POR",
+    "origin_team_id": "POR",
+    "year": 2029,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "HOU-2029-2",
+    "owner_team_id": "HOU",
+    "origin_team_id": "HOU",
+    "year": 2029,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "DEN-2029-2",
+    "owner_team_id": "DEN",
+    "origin_team_id": "DEN",
+    "year": 2029,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "SAC-2029-2",
+    "owner_team_id": "SAC",
+    "origin_team_id": "SAC",
+    "year": 2029,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "BOS-2029-2",
+    "owner_team_id": "BOS",
+    "origin_team_id": "BOS",
+    "year": 2029,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "MIN-2029-2",
+    "owner_team_id": "MIN",
+    "origin_team_id": "MIN",
+    "year": 2029,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "DET-2029-2",
+    "owner_team_id": "DET",
+    "origin_team_id": "DET",
+    "year": 2029,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "IND-2029-2",
+    "owner_team_id": "IND",
+    "origin_team_id": "IND",
+    "year": 2029,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "NOP-2029-2",
+    "owner_team_id": "NOP",
+    "origin_team_id": "NOP",
+    "year": 2029,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "TOR-2029-2",
+    "owner_team_id": "TOR",
+    "origin_team_id": "TOR",
+    "year": 2029,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "LAC-2029-2",
+    "owner_team_id": "LAC",
+    "origin_team_id": "LAC",
+    "year": 2029,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "UTA-2029-2",
+    "owner_team_id": "UTA",
+    "origin_team_id": "UTA",
+    "year": 2029,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "GSW-2029-2",
+    "owner_team_id": "GSW",
+    "origin_team_id": "GSW",
+    "year": 2029,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "DAL-2029-2",
+    "owner_team_id": "DAL",
+    "origin_team_id": "DAL",
+    "year": 2029,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "MIL-2029-2",
+    "owner_team_id": "MIL",
+    "origin_team_id": "MIL",
+    "year": 2029,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "ORL-2029-2",
+    "owner_team_id": "ORL",
+    "origin_team_id": "ORL",
+    "year": 2029,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "CHI-2029-2",
+    "owner_team_id": "CHI",
+    "origin_team_id": "CHI",
+    "year": 2029,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "CHA-2029-2",
+    "owner_team_id": "CHA",
+    "origin_team_id": "CHA",
+    "year": 2029,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "OKC-2029-2",
+    "owner_team_id": "OKC",
+    "origin_team_id": "OKC",
+    "year": 2029,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "WAS-2029-2",
+    "owner_team_id": "WAS",
+    "origin_team_id": "WAS",
+    "year": 2029,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "SAS-2029-2",
+    "owner_team_id": "SAS",
+    "origin_team_id": "SAS",
+    "year": 2029,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "MIA-2029-2",
+    "owner_team_id": "MIA",
+    "origin_team_id": "MIA",
+    "year": 2029,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "ATL-2030-1",
+    "owner_team_id": "ATL",
+    "origin_team_id": "ATL",
+    "year": 2030,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "MEM-2030-1",
+    "owner_team_id": "MEM",
+    "origin_team_id": "MEM",
+    "year": 2030,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "NYK-2030-1",
+    "owner_team_id": "NYK",
+    "origin_team_id": "NYK",
+    "year": 2030,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "PHI-2030-1",
+    "owner_team_id": "PHI",
+    "origin_team_id": "PHI",
+    "year": 2030,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "LAL-2030-1",
+    "owner_team_id": "LAL",
+    "origin_team_id": "LAL",
+    "year": 2030,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "BKN-2030-1",
+    "owner_team_id": "BKN",
+    "origin_team_id": "BKN",
+    "year": 2030,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "CLE-2030-1",
+    "owner_team_id": "CLE",
+    "origin_team_id": "CLE",
+    "year": 2030,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "PHX-2030-1",
+    "owner_team_id": "PHX",
+    "origin_team_id": "PHX",
+    "year": 2030,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "POR-2030-1",
+    "owner_team_id": "POR",
+    "origin_team_id": "POR",
+    "year": 2030,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "HOU-2030-1",
+    "owner_team_id": "HOU",
+    "origin_team_id": "HOU",
+    "year": 2030,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "DEN-2030-1",
+    "owner_team_id": "DEN",
+    "origin_team_id": "DEN",
+    "year": 2030,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "SAC-2030-1",
+    "owner_team_id": "SAC",
+    "origin_team_id": "SAC",
+    "year": 2030,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "BOS-2030-1",
+    "owner_team_id": "BOS",
+    "origin_team_id": "BOS",
+    "year": 2030,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "MIN-2030-1",
+    "owner_team_id": "MIN",
+    "origin_team_id": "MIN",
+    "year": 2030,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "DET-2030-1",
+    "owner_team_id": "DET",
+    "origin_team_id": "DET",
+    "year": 2030,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "IND-2030-1",
+    "owner_team_id": "IND",
+    "origin_team_id": "IND",
+    "year": 2030,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "NOP-2030-1",
+    "owner_team_id": "NOP",
+    "origin_team_id": "NOP",
+    "year": 2030,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "TOR-2030-1",
+    "owner_team_id": "TOR",
+    "origin_team_id": "TOR",
+    "year": 2030,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "LAC-2030-1",
+    "owner_team_id": "LAC",
+    "origin_team_id": "LAC",
+    "year": 2030,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "UTA-2030-1",
+    "owner_team_id": "UTA",
+    "origin_team_id": "UTA",
+    "year": 2030,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "GSW-2030-1",
+    "owner_team_id": "GSW",
+    "origin_team_id": "GSW",
+    "year": 2030,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "DAL-2030-1",
+    "owner_team_id": "DAL",
+    "origin_team_id": "DAL",
+    "year": 2030,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "MIL-2030-1",
+    "owner_team_id": "MIL",
+    "origin_team_id": "MIL",
+    "year": 2030,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "ORL-2030-1",
+    "owner_team_id": "ORL",
+    "origin_team_id": "ORL",
+    "year": 2030,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "CHI-2030-1",
+    "owner_team_id": "CHI",
+    "origin_team_id": "CHI",
+    "year": 2030,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "CHA-2030-1",
+    "owner_team_id": "CHA",
+    "origin_team_id": "CHA",
+    "year": 2030,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "OKC-2030-1",
+    "owner_team_id": "OKC",
+    "origin_team_id": "OKC",
+    "year": 2030,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "WAS-2030-1",
+    "owner_team_id": "WAS",
+    "origin_team_id": "WAS",
+    "year": 2030,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "SAS-2030-1",
+    "owner_team_id": "SAS",
+    "origin_team_id": "SAS",
+    "year": 2030,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "MIA-2030-1",
+    "owner_team_id": "MIA",
+    "origin_team_id": "MIA",
+    "year": 2030,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "ATL-2030-2",
+    "owner_team_id": "ATL",
+    "origin_team_id": "ATL",
+    "year": 2030,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "MEM-2030-2",
+    "owner_team_id": "MEM",
+    "origin_team_id": "MEM",
+    "year": 2030,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "NYK-2030-2",
+    "owner_team_id": "NYK",
+    "origin_team_id": "NYK",
+    "year": 2030,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "PHI-2030-2",
+    "owner_team_id": "PHI",
+    "origin_team_id": "PHI",
+    "year": 2030,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "LAL-2030-2",
+    "owner_team_id": "LAL",
+    "origin_team_id": "LAL",
+    "year": 2030,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "BKN-2030-2",
+    "owner_team_id": "BKN",
+    "origin_team_id": "BKN",
+    "year": 2030,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "CLE-2030-2",
+    "owner_team_id": "CLE",
+    "origin_team_id": "CLE",
+    "year": 2030,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "PHX-2030-2",
+    "owner_team_id": "PHX",
+    "origin_team_id": "PHX",
+    "year": 2030,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "POR-2030-2",
+    "owner_team_id": "POR",
+    "origin_team_id": "POR",
+    "year": 2030,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "HOU-2030-2",
+    "owner_team_id": "HOU",
+    "origin_team_id": "HOU",
+    "year": 2030,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "DEN-2030-2",
+    "owner_team_id": "DEN",
+    "origin_team_id": "DEN",
+    "year": 2030,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "SAC-2030-2",
+    "owner_team_id": "SAC",
+    "origin_team_id": "SAC",
+    "year": 2030,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "BOS-2030-2",
+    "owner_team_id": "BOS",
+    "origin_team_id": "BOS",
+    "year": 2030,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "MIN-2030-2",
+    "owner_team_id": "MIN",
+    "origin_team_id": "MIN",
+    "year": 2030,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "DET-2030-2",
+    "owner_team_id": "DET",
+    "origin_team_id": "DET",
+    "year": 2030,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "IND-2030-2",
+    "owner_team_id": "IND",
+    "origin_team_id": "IND",
+    "year": 2030,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "NOP-2030-2",
+    "owner_team_id": "NOP",
+    "origin_team_id": "NOP",
+    "year": 2030,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "TOR-2030-2",
+    "owner_team_id": "TOR",
+    "origin_team_id": "TOR",
+    "year": 2030,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "LAC-2030-2",
+    "owner_team_id": "LAC",
+    "origin_team_id": "LAC",
+    "year": 2030,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "UTA-2030-2",
+    "owner_team_id": "UTA",
+    "origin_team_id": "UTA",
+    "year": 2030,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "GSW-2030-2",
+    "owner_team_id": "GSW",
+    "origin_team_id": "GSW",
+    "year": 2030,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "DAL-2030-2",
+    "owner_team_id": "DAL",
+    "origin_team_id": "DAL",
+    "year": 2030,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "MIL-2030-2",
+    "owner_team_id": "MIL",
+    "origin_team_id": "MIL",
+    "year": 2030,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "ORL-2030-2",
+    "owner_team_id": "ORL",
+    "origin_team_id": "ORL",
+    "year": 2030,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "CHI-2030-2",
+    "owner_team_id": "CHI",
+    "origin_team_id": "CHI",
+    "year": 2030,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "CHA-2030-2",
+    "owner_team_id": "CHA",
+    "origin_team_id": "CHA",
+    "year": 2030,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "OKC-2030-2",
+    "owner_team_id": "OKC",
+    "origin_team_id": "OKC",
+    "year": 2030,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "WAS-2030-2",
+    "owner_team_id": "WAS",
+    "origin_team_id": "WAS",
+    "year": 2030,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "SAS-2030-2",
+    "owner_team_id": "SAS",
+    "origin_team_id": "SAS",
+    "year": 2030,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "MIA-2030-2",
+    "owner_team_id": "MIA",
+    "origin_team_id": "MIA",
+    "year": 2030,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "ATL-2031-1",
+    "owner_team_id": "ATL",
+    "origin_team_id": "ATL",
+    "year": 2031,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "MEM-2031-1",
+    "owner_team_id": "MEM",
+    "origin_team_id": "MEM",
+    "year": 2031,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "NYK-2031-1",
+    "owner_team_id": "NYK",
+    "origin_team_id": "NYK",
+    "year": 2031,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "PHI-2031-1",
+    "owner_team_id": "PHI",
+    "origin_team_id": "PHI",
+    "year": 2031,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "LAL-2031-1",
+    "owner_team_id": "LAL",
+    "origin_team_id": "LAL",
+    "year": 2031,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "BKN-2031-1",
+    "owner_team_id": "BKN",
+    "origin_team_id": "BKN",
+    "year": 2031,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "CLE-2031-1",
+    "owner_team_id": "CLE",
+    "origin_team_id": "CLE",
+    "year": 2031,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "PHX-2031-1",
+    "owner_team_id": "PHX",
+    "origin_team_id": "PHX",
+    "year": 2031,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "POR-2031-1",
+    "owner_team_id": "POR",
+    "origin_team_id": "POR",
+    "year": 2031,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "HOU-2031-1",
+    "owner_team_id": "HOU",
+    "origin_team_id": "HOU",
+    "year": 2031,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "DEN-2031-1",
+    "owner_team_id": "DEN",
+    "origin_team_id": "DEN",
+    "year": 2031,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "SAC-2031-1",
+    "owner_team_id": "SAC",
+    "origin_team_id": "SAC",
+    "year": 2031,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "BOS-2031-1",
+    "owner_team_id": "BOS",
+    "origin_team_id": "BOS",
+    "year": 2031,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "MIN-2031-1",
+    "owner_team_id": "MIN",
+    "origin_team_id": "MIN",
+    "year": 2031,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "DET-2031-1",
+    "owner_team_id": "DET",
+    "origin_team_id": "DET",
+    "year": 2031,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "IND-2031-1",
+    "owner_team_id": "IND",
+    "origin_team_id": "IND",
+    "year": 2031,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "NOP-2031-1",
+    "owner_team_id": "NOP",
+    "origin_team_id": "NOP",
+    "year": 2031,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "TOR-2031-1",
+    "owner_team_id": "TOR",
+    "origin_team_id": "TOR",
+    "year": 2031,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "LAC-2031-1",
+    "owner_team_id": "LAC",
+    "origin_team_id": "LAC",
+    "year": 2031,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "UTA-2031-1",
+    "owner_team_id": "UTA",
+    "origin_team_id": "UTA",
+    "year": 2031,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "GSW-2031-1",
+    "owner_team_id": "GSW",
+    "origin_team_id": "GSW",
+    "year": 2031,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "DAL-2031-1",
+    "owner_team_id": "DAL",
+    "origin_team_id": "DAL",
+    "year": 2031,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "MIL-2031-1",
+    "owner_team_id": "MIL",
+    "origin_team_id": "MIL",
+    "year": 2031,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "ORL-2031-1",
+    "owner_team_id": "ORL",
+    "origin_team_id": "ORL",
+    "year": 2031,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "CHI-2031-1",
+    "owner_team_id": "CHI",
+    "origin_team_id": "CHI",
+    "year": 2031,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "CHA-2031-1",
+    "owner_team_id": "CHA",
+    "origin_team_id": "CHA",
+    "year": 2031,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "OKC-2031-1",
+    "owner_team_id": "OKC",
+    "origin_team_id": "OKC",
+    "year": 2031,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "WAS-2031-1",
+    "owner_team_id": "WAS",
+    "origin_team_id": "WAS",
+    "year": 2031,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "SAS-2031-1",
+    "owner_team_id": "SAS",
+    "origin_team_id": "SAS",
+    "year": 2031,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "MIA-2031-1",
+    "owner_team_id": "MIA",
+    "origin_team_id": "MIA",
+    "year": 2031,
+    "round": 1,
+    "protections": null,
+    "expected_pick": 15
+  },
+  {
+    "id": "ATL-2031-2",
+    "owner_team_id": "ATL",
+    "origin_team_id": "ATL",
+    "year": 2031,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "MEM-2031-2",
+    "owner_team_id": "MEM",
+    "origin_team_id": "MEM",
+    "year": 2031,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "NYK-2031-2",
+    "owner_team_id": "NYK",
+    "origin_team_id": "NYK",
+    "year": 2031,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "PHI-2031-2",
+    "owner_team_id": "PHI",
+    "origin_team_id": "PHI",
+    "year": 2031,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "LAL-2031-2",
+    "owner_team_id": "LAL",
+    "origin_team_id": "LAL",
+    "year": 2031,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "BKN-2031-2",
+    "owner_team_id": "BKN",
+    "origin_team_id": "BKN",
+    "year": 2031,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "CLE-2031-2",
+    "owner_team_id": "CLE",
+    "origin_team_id": "CLE",
+    "year": 2031,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "PHX-2031-2",
+    "owner_team_id": "PHX",
+    "origin_team_id": "PHX",
+    "year": 2031,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "POR-2031-2",
+    "owner_team_id": "POR",
+    "origin_team_id": "POR",
+    "year": 2031,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "HOU-2031-2",
+    "owner_team_id": "HOU",
+    "origin_team_id": "HOU",
+    "year": 2031,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "DEN-2031-2",
+    "owner_team_id": "DEN",
+    "origin_team_id": "DEN",
+    "year": 2031,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "SAC-2031-2",
+    "owner_team_id": "SAC",
+    "origin_team_id": "SAC",
+    "year": 2031,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "BOS-2031-2",
+    "owner_team_id": "BOS",
+    "origin_team_id": "BOS",
+    "year": 2031,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "MIN-2031-2",
+    "owner_team_id": "MIN",
+    "origin_team_id": "MIN",
+    "year": 2031,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "DET-2031-2",
+    "owner_team_id": "DET",
+    "origin_team_id": "DET",
+    "year": 2031,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "IND-2031-2",
+    "owner_team_id": "IND",
+    "origin_team_id": "IND",
+    "year": 2031,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "NOP-2031-2",
+    "owner_team_id": "NOP",
+    "origin_team_id": "NOP",
+    "year": 2031,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "TOR-2031-2",
+    "owner_team_id": "TOR",
+    "origin_team_id": "TOR",
+    "year": 2031,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "LAC-2031-2",
+    "owner_team_id": "LAC",
+    "origin_team_id": "LAC",
+    "year": 2031,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "UTA-2031-2",
+    "owner_team_id": "UTA",
+    "origin_team_id": "UTA",
+    "year": 2031,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "GSW-2031-2",
+    "owner_team_id": "GSW",
+    "origin_team_id": "GSW",
+    "year": 2031,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "DAL-2031-2",
+    "owner_team_id": "DAL",
+    "origin_team_id": "DAL",
+    "year": 2031,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "MIL-2031-2",
+    "owner_team_id": "MIL",
+    "origin_team_id": "MIL",
+    "year": 2031,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "ORL-2031-2",
+    "owner_team_id": "ORL",
+    "origin_team_id": "ORL",
+    "year": 2031,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "CHI-2031-2",
+    "owner_team_id": "CHI",
+    "origin_team_id": "CHI",
+    "year": 2031,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "CHA-2031-2",
+    "owner_team_id": "CHA",
+    "origin_team_id": "CHA",
+    "year": 2031,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "OKC-2031-2",
+    "owner_team_id": "OKC",
+    "origin_team_id": "OKC",
+    "year": 2031,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "WAS-2031-2",
+    "owner_team_id": "WAS",
+    "origin_team_id": "WAS",
+    "year": 2031,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "SAS-2031-2",
+    "owner_team_id": "SAS",
+    "origin_team_id": "SAS",
+    "year": 2031,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  },
+  {
+    "id": "MIA-2031-2",
+    "owner_team_id": "MIA",
+    "origin_team_id": "MIA",
+    "year": 2031,
+    "round": 2,
+    "protections": null,
+    "expected_pick": 45
+  }
+]

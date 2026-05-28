@@ -1,0 +1,13 @@
+{
+  "_comment": "User-editable overrides for picks.json. Three operations: 'add' (insert new picks for traded ones the auto-generator missed), 'remove' (delete picks a team no longer owns), 'edit' (change fields on existing picks by id, e.g. add protections). Re-run scripts/generate_picks.py after editing.",
+  "_protection_values_supported": [
+    "top-1 protected", "top-2 protected", "top-3 protected", "top-4 protected",
+    "top-5 protected", "top-8 protected", "top-10 protected", "top-14 protected",
+    "lottery protected"
+  ],
+  "add": [],
+  "remove": [],
+  "edit": [
+    {"id": "DAL-2027-1", "protections": "top-2 protected"}
+  ]
+}

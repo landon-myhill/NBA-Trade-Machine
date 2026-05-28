@@ -1,0 +1,11 @@
+{
+  "_comment": "Per-draft-year multiplier on pick value. 1.0 is average. Edit freely. Unknown years default to 1.0.",
+  "2024": 1.10,
+  "2025": 1.00,
+  "2026": 1.05,
+  "2027": 1.00,
+  "2028": 1.00,
+  "2029": 1.00,
+  "_known_strong": "2024 (Flagg, Bailey, Harper era inputs)",
+  "_known_weak": "2021 (post-Cunningham steep falloff)"
+}

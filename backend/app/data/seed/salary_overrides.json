@@ -1,0 +1,7 @@
+{
+  "_comment": "Correct stale or wrong salaries from the bbref scrape. Keyed by bbref player id (e.g. 'jamesle01'). Provide any of current_salary / total_guaranteed / years_remaining. Run `python scripts/patch_salaries.py` to apply (instant, no re-scrape).",
+  "_example": {
+    "jamesle01": { "current_salary": 52627153, "years_remaining": 1, "total_guaranteed": 52627153 }
+  },
+  "overrides": {}
+}

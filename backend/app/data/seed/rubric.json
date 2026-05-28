@@ -1,0 +1,52 @@
+{
+  "_comment": "Tier qualifies on EITHER min_stats_value OR min_bpm (OR semantics for stat thresholds). Composite catches well-rounded players; peak BPM catches stars having a down year.",
+  "name": "ntv-composite-or-bpm-2025-26",
+  "rules": [
+    {
+      "tier": 1,
+      "label": "Superstar / MVP-tier",
+      "min_stats_value": 100.0,
+      "min_bpm": 7.0
+    },
+    {
+      "tier": 2,
+      "label": "All-NBA caliber",
+      "min_stats_value": 70.0,
+      "min_bpm": 3.5
+    },
+    {
+      "tier": 3,
+      "label": "All-Star caliber",
+      "min_stats_value": 50.0,
+      "min_bpm": 2.5
+    },
+    {
+      "tier": 4,
+      "label": "High-end starter",
+      "min_stats_value": 35.0,
+      "min_bpm": 1.5
+    },
+    {
+      "tier": 5,
+      "label": "Solid starter",
+      "min_stats_value": 22.0,
+      "min_bpm": 0.5
+    },
+    {
+      "tier": 6,
+      "label": "Rotation player",
+      "min_stats_value": 10.0,
+      "min_bpm": -1.0
+    }
+  ],
+  "default_tier": 7,
+  "multipliers": {
+    "1": 1.60,
+    "2": 1.40,
+    "3": 1.22,
+    "4": 1.08,
+    "5": 1.02,
+    "6": 0.85,
+    "7": 0.65
+  }
+}

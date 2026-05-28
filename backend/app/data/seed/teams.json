@@ -1,0 +1,323 @@
+[
+  {
+    "id": "ATL",
+    "name": "Atlanta Hawks",
+    "abbreviation": "ATL",
+    "needs": [
+      "PG",
+      "PF"
+    ],
+    "timeline": "play_in"
+  },
+  {
+    "id": "BOS",
+    "name": "Boston Celtics",
+    "abbreviation": "BOS",
+    "needs": [
+      "C"
+    ],
+    "timeline": "contender"
+  },
+  {
+    "id": "BKN",
+    "name": "Brooklyn Nets",
+    "abbreviation": "BKN",
+    "needs": [
+      "PG",
+      "SG",
+      "PF",
+      "C"
+    ],
+    "timeline": "rebuild"
+  },
+  {
+    "id": "CHA",
+    "name": "Charlotte Hornets",
+    "abbreviation": "CHA",
+    "needs": [
+      "SG",
+      "PF",
+      "C"
+    ],
+    "timeline": "play_in"
+  },
+  {
+    "id": "CHI",
+    "name": "Chicago Bulls",
+    "abbreviation": "CHI",
+    "needs": [
+      "SG",
+      "SF",
+      "PF",
+      "C"
+    ],
+    "timeline": "play_in"
+  },
+  {
+    "id": "CLE",
+    "name": "Cleveland Cavaliers",
+    "abbreviation": "CLE",
+    "needs": [
+      "SF"
+    ],
+    "timeline": "contender"
+  },
+  {
+    "id": "DAL",
+    "name": "Dallas Mavericks",
+    "abbreviation": "DAL",
+    "needs": [
+      "PG",
+      "PF",
+      "C"
+    ],
+    "timeline": "rebuild"
+  },
+  {
+    "id": "DEN",
+    "name": "Denver Nuggets",
+    "abbreviation": "DEN",
+    "needs": [
+      "SG",
+      "SF",
+      "PF"
+    ],
+    "timeline": "contender"
+  },
+  {
+    "id": "DET",
+    "name": "Detroit Pistons",
+    "abbreviation": "DET",
+    "needs": [
+      "SG",
+      "SF",
+      "PF"
+    ],
+    "timeline": "contender"
+  },
+  {
+    "id": "GSW",
+    "name": "Golden State Warriors",
+    "abbreviation": "GSW",
+    "needs": [
+      "PF",
+      "C"
+    ],
+    "timeline": "play_in"
+  },
+  {
+    "id": "HOU",
+    "name": "Houston Rockets",
+    "abbreviation": "HOU",
+    "needs": [
+      "SG",
+      "PF"
+    ],
+    "timeline": "contender"
+  },
+  {
+    "id": "IND",
+    "name": "Indiana Pacers",
+    "abbreviation": "IND",
+    "needs": [
+      "SG",
+      "SF",
+      "PF",
+      "C"
+    ],
+    "timeline": "rebuild"
+  },
+  {
+    "id": "LAC",
+    "name": "Los Angeles Clippers",
+    "abbreviation": "LAC",
+    "needs": [
+      "SG",
+      "C"
+    ],
+    "timeline": "play_in"
+  },
+  {
+    "id": "LAL",
+    "name": "Los Angeles Lakers",
+    "abbreviation": "LAL",
+    "needs": [
+      "PF",
+      "C"
+    ],
+    "timeline": "contender"
+  },
+  {
+    "id": "MEM",
+    "name": "Memphis Grizzlies",
+    "abbreviation": "MEM",
+    "needs": [
+      "PG",
+      "SG",
+      "SF",
+      "PF",
+      "C"
+    ],
+    "timeline": "rebuild"
+  },
+  {
+    "id": "MIA",
+    "name": "Miami Heat",
+    "abbreviation": "MIA",
+    "needs": [
+      "PG",
+      "SG",
+      "SF",
+      "PF"
+    ],
+    "timeline": "play_in"
+  },
+  {
+    "id": "MIL",
+    "name": "Milwaukee Bucks",
+    "abbreviation": "MIL",
+    "needs": [
+      "SG",
+      "SF",
+      "C"
+    ],
+    "timeline": "play_in"
+  },
+  {
+    "id": "MIN",
+    "name": "Minnesota Timberwolves",
+    "abbreviation": "MIN",
+    "needs": [
+      "PG",
+      "SF",
+      "C"
+    ],
+    "timeline": "contender"
+  },
+  {
+    "id": "NOP",
+    "name": "New Orleans Pelicans",
+    "abbreviation": "NOP",
+    "needs": [
+      "PG",
+      "SG",
+      "C"
+    ],
+    "timeline": "rebuild"
+  },
+  {
+    "id": "NYK",
+    "name": "New York Knicks",
+    "abbreviation": "NYK",
+    "needs": [
+      "SG",
+      "PF"
+    ],
+    "timeline": "contender"
+  },
+  {
+    "id": "OKC",
+    "name": "Oklahoma City Thunder",
+    "abbreviation": "OKC",
+    "needs": [
+      "SF"
+    ],
+    "timeline": "contender"
+  },
+  {
+    "id": "ORL",
+    "name": "Orlando Magic",
+    "abbreviation": "ORL",
+    "needs": [
+      "PG",
+      "SF",
+      "C"
+    ],
+    "timeline": "play_in"
+  },
+  {
+    "id": "PHI",
+    "name": "Philadelphia 76ers",
+    "abbreviation": "PHI",
+    "needs": [
+      "SF",
+      "PF"
+    ],
+    "timeline": "play_in"
+  },
+  {
+    "id": "PHX",
+    "name": "Phoenix Suns",
+    "abbreviation": "PHX",
+    "needs": [
+      "PG",
+      "SF",
+      "PF"
+    ],
+    "timeline": "play_in"
+  },
+  {
+    "id": "POR",
+    "name": "Portland Trail Blazers",
+    "abbreviation": "POR",
+    "needs": [
+      "SG",
+      "PF"
+    ],
+    "timeline": "play_in"
+  },
+  {
+    "id": "SAC",
+    "name": "Sacramento Kings",
+    "abbreviation": "SAC",
+    "needs": [
+      "PG",
+      "SG",
+      "SF",
+      "PF"
+    ],
+    "timeline": "rebuild"
+  },
+  {
+    "id": "SAS",
+    "name": "San Antonio Spurs",
+    "abbreviation": "SAS",
+    "needs": [
+      "SG",
+      "SF",
+      "PF"
+    ],
+    "timeline": "contender"
+  },
+  {
+    "id": "TOR",
+    "name": "Toronto Raptors",
+    "abbreviation": "TOR",
+    "needs": [
+      "SG",
+      "C"
+    ],
+    "timeline": "play_in"
+  },
+  {
+    "id": "UTA",
+    "name": "Utah Jazz",
+    "abbreviation": "UTA",
+    "needs": [
+      "SG",
+      "SF"
+    ],
+    "timeline": "rebuild"
+  },
+  {
+    "id": "WAS",
+    "name": "Washington Wizards",
+    "abbreviation": "WAS",
+    "needs": [
+      "SG",
+      "SF",
+      "C"
+    ],
+    "timeline": "rebuild"
+  }
+]
