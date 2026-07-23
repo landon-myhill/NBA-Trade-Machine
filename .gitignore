@@ -13,6 +13,9 @@ frontend/.vite/
 # OS
 .DS_Store
 
+# Editor backups
+*.bak
+
 # IDE
 .vscode/
 .idea/

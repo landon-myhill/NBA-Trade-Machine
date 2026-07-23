@@ -4,7 +4,7 @@ A mock-trade builder with a **rubric-driven fairness calculator**. The different
 
 ## Status
 
-v1 covers stats-based fairness with rubric-driven tiers, draft pick valuation, and team-fit adjustments. **CBA legality / financials are deferred** — they will be added later as a separate signal alongside fairness, not folded into the score.
+v1 covers stats-based fairness with rubric-driven tiers, draft pick valuation, and team-fit adjustments, plus a **CBA legality checker** (`backend/app/cba/`): 2023-CBA salary-matching brackets, tax-apron team status, and mid-level exception absorption, surfaced as a separate signal alongside fairness rather than folded into the score.
 
 ## Architecture
 
@@ -85,7 +85,7 @@ In dev mode, Vite proxies `/api/*` to `http://127.0.0.1:8000`. Open http://local
 
 ## Roadmap
 
-- [ ] CBA legality module (salary-matching, hard cap, second apron) — separate signal from fairness
+- [x] CBA legality module (salary-matching, tax aprons, MLE absorption) — separate signal from fairness
 - [ ] 3+ team trades (need explicit per-asset destinations)
 - [ ] Persisted scenarios / shareable trade URLs
 - [ ] Real data ingestion (Basketball-Reference scrape or paid API)
